@@ -20,8 +20,7 @@ function Dropzone({ handleUpdate, data, alowFileSelection }) {
         message: `Please login to upload file`,
       };
     }
-    // if (file.type !== "text/html")
-    if (file.type !== "application/pdf") {
+    if (file.type !== "text/html") {
       Swal.fire({
         icon: "error",
         title: "Oops...",
